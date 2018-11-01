@@ -131,3 +131,23 @@ C:\Users\chris\NHL Stenden Hogeschool\Group - Memory Project P1 - Documenten\Pro
 C:\Users\chris\NHL Stenden Hogeschool\Group - Memory Project P1 - Documenten\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.exe
 C:\Users\chris\NHL Stenden Hogeschool\Group - Memory Project P1 - Documenten\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.pdb
 C:\Users\jornb\NHL Stenden Hogeschool\Group - Memory Project P1 - Documenten\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_Content.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\bin\Debug\Project Memory Card Game.exe.config
+D:\Memor\Project NIEUW\Project Memory Card Game\bin\Debug\Project Memory Card Game.exe
+D:\Memor\Project NIEUW\Project Memory Card Game\bin\Debug\Project Memory Card Game.pdb
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.csprojAssemblyReference.cache
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainMenu.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainWindow.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Settings.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\App.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_Content.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_MarkupCompile.cache
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_MarkupCompile.lref
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainMenu.baml
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainWindow.baml
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Settings.baml
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.g.resources
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project_Memory_Card_Game.Properties.Resources.resources
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.csproj.GenerateResource.cache
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.csproj.CoreCompileInputs.cache
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.exe
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.pdb
