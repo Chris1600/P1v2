@@ -123,7 +123,7 @@ namespace Project_Memory_Card_Game
             }
         }
         
-        //Kaarten draaien om op klik
+        //Kaarten draaien om op klik & paircheck
         private void CardClick(object sender, MouseButtonEventArgs e)
         {
             Image card = (Image)sender;
@@ -267,6 +267,13 @@ namespace Project_Memory_Card_Game
         {
             grid.Children.Clear();
             AddImage();
+            Score1 = 0;
+            Score2 = 0;
+            streak = 0;
+            StreakScore = 0;
+            beurt = 1;
+            lastClicked = -1;
+            match = false;
         }
     }
 }
