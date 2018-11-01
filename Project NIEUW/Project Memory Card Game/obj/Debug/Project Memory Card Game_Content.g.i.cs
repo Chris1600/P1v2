@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("project/correct.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("project/sounds/correct.wav")]
 
 

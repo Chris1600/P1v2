@@ -142,19 +142,17 @@ namespace Project_Memory_Card_Game
 
                 if (lastClicked == front.GetNumber())
                 {
-                    
+                    SoundManager.PlayCorrect();
                     MessageBox.Show("Gefeliciteerd, je hebt een pair!");
                     match = true;
                     Score();
                     card.Opacity = 0;
                     card2.Opacity = 0;
                     card.IsEnabled = false;
-                    SoundManager.PlayCorrect();
                 }
                 
                 if (match == false)
                 {
-
                     MessageBox.Show("Helaas, je hebt geen pair!");
                     //lastClicked2 = front.GetNumber();
                     lastClickedImage.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
