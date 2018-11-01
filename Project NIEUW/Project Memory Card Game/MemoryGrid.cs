@@ -24,6 +24,8 @@ namespace Project_Memory_Card_Game
         private bool match = false;
         private Image lastClickedImage2;
         private Image card2;
+        private int Score1, Score2, streak, StreakScore = 0;
+        private int beurt = 1;
 
 
 
@@ -121,7 +123,7 @@ namespace Project_Memory_Card_Game
             }
         }
         
-        //Kaarten draaien om op klik
+        //Kaarten draaien om op klik & paircheck
         private void CardClick(object sender, MouseButtonEventArgs e)
         {
             Image card = (Image)sender;
@@ -142,8 +144,7 @@ namespace Project_Memory_Card_Game
 
                 if (lastClicked == front.GetNumber())
                 {
-                    
-                    MessageBox.Show("Gefeliciteerd, je hebt een pair!");
+                    MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
                     match = true;
                     Score();
                     card.Opacity = 0;
@@ -162,6 +163,18 @@ namespace Project_Memory_Card_Game
                     //Task.Delay(2000).ContinueWith(t => Fout());
                     card.IsEnabled = true;
                     card2.IsEnabled = true;
+                    streak = 0;
+                    StreakScore = 0;
+
+                    if (beurt == 1)
+                    {
+                        beurt = 2;
+                    }
+
+                    else
+                    {
+                        beurt = 1;
+                    }
                 }
 
                 lastClicked = -1;
@@ -169,25 +182,70 @@ namespace Project_Memory_Card_Game
             }
         }
 
-        private void Fout()
-        {
-            lastClickedImage.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
-            lastClickedImage2.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
-        }
+        //private void Fout()
+        //{
+        //    lastClickedImage.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
+        //    lastClickedImage2.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
+        //}
 
         //Score
         private int Score()
         {
-            int score = 0;
-
-            if (match == true)
+            if (beurt == 1)
             {
-                score += 100;
+                Score1 += 100;
+                Streak();
+                Score1 += StreakScore;
+                streak++;
             }
 
-            return score;
+            else
+            {
+                Score2 += 100;
+                Streak();
+                Score2 += StreakScore;
+                streak++;
+            }
+            return Score1;
         }
-      
+
+        #region
+        private int Streak()
+        {
+            switch (streak)
+            {
+                case 0:
+                    StreakScore += 0;
+                    break;
+                case 1:
+                    StreakScore += 20;
+                    break;
+                case 2:
+                    StreakScore += 20;
+                    break;
+                case 3:
+                    StreakScore += 20;
+                    break;
+                case 4:
+                    StreakScore += 20;
+                    break;
+                case 5:
+                    StreakScore += 20;
+                    break;
+                case 6:
+                    StreakScore += 20;
+                    break;
+                case 7:
+                    StreakScore += 20;
+                    break;
+                case 8:
+                    StreakScore += 20;
+                    break;
+            }
+            return StreakScore;
+        }
+        #endregion
+
         //Plaatjes inladen
         public List<CardFront> GetImagesList()
         {
@@ -209,6 +267,13 @@ namespace Project_Memory_Card_Game
         {
             grid.Children.Clear();
             AddImage();
+            Score1 = 0;
+            Score2 = 0;
+            streak = 0;
+            StreakScore = 0;
+            beurt = 1;
+            lastClicked = -1;
+            match = false;
         }
     }
 }
