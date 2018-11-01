@@ -36,7 +36,7 @@
         <Button Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="556,351,0,0" Height="52"/>
         <Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="672,351,0,0" Height="52" Click="Button_Click"/>
 
-        <Label x:Name="Score" Content="Score Player 1: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,384,0,0" Width="153" FontFamily="Segoe UI Black" Foreground="White" FontSize="14"/>
+        <Label x:Name="Score" Content="Score Player 1: + Score1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,384,0,0" Width="153" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" TextInput="Score1"/>
 
         <Button Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Margin="731,10,0,0" Click="Button_Click_1" RenderTransformOrigin="0.603,1.933"/>
         <Label x:Name="Score_Copy" Content="Score Player 2: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="249,383,0,0" Width="153" FontFamily="Segoe UI Black" Foreground="White" FontSize="14"/>

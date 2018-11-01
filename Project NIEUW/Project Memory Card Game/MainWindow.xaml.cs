@@ -46,6 +46,11 @@ namespace Project_Memory_Card_Game
             menu.Show();
 
         }
+
+        private void Score1(object sender, TextCompositionEventArgs e)
+        {
+
+        }
     }
 
 
