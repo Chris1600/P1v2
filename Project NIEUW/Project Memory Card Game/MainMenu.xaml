@@ -1,0 +1,42 @@
+﻿<Window x:Class="Project_Memory_Card_Game.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Memory_Card_Game"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="450" Width="800">
+    
+    <Grid Background="#FFF0EEAF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+
+        <Label FontFamily="Arial Bold" FontSize="30" Content="Memory Game" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="284,10,0,0" Width="245"/>
+
+        <Button x:Name="Start" Background="#FFF0EEAF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="284,67,0,0" Height="89" BorderBrush="#FFF0EEAF" Click="Start_Click">
+            <Button.Content>
+                <Image Source="start.png"/>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="Settings" Background="#FFF0EEAF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="284,149,0,0" Height="89" BorderBrush="#FFF0EEAF" Grid.RowSpan="2" Click="Settings_Click">
+            <Button.Content>
+                <Image Source="settings.png"/>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="Quit" Background="#FFF0EEAF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="284,77.758,0,0" Height="89" BorderBrush="#FFF0EEAF" Click="Quit_Click" Grid.Row="1">
+            <Button.Content>
+                <Image Source="quit.png"/>
+            </Button.Content>
+
+        </Button>
+        
+        <Image Margin="0,77.758,588.333,8.667" Source="g-sleutel.png" Stretch="Fill" Grid.Row="1"/>
+        <Image Margin="588,76.758,0.333,9.667" Source="g-sleutel.png" Stretch="Fill" Grid.Row="1"/>
+        <Image Margin="588,10,0.333,236.667" Source="g-sleutel.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image Margin="0,10,588.333,236.667" Source="g-sleutel.png" Stretch="Fill" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
