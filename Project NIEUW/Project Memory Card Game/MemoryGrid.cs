@@ -144,13 +144,13 @@ namespace Project_Memory_Card_Game
 
                 if (lastClicked == front.GetNumber())
                 {
-                    MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
                     match = true;
                     Score();
                     card.Opacity = 0;
                     card2.Opacity = 0;
                     card.IsEnabled = false;
                     SoundManager.PlayCorrect();
+                    MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
                 }
                 
                 if (match == false)

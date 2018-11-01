@@ -139,7 +139,6 @@ D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainMenu.g.cs
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainWindow.g.cs
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Settings.g.cs
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\App.g.cs
-D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_Content.g.cs
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_MarkupCompile.cache
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game_MarkupCompile.lref
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\MainMenu.baml
