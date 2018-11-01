@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Project_Memory_Card_Game"
         mc:Ignorable="d"
         Title="MainMenu" Height="450" Width="800">
-    
+
     <Grid Background="#FFF0EEAF">
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"/>
@@ -17,7 +17,7 @@
 
         <Button x:Name="Start" Background="#FFF0EEAF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="284,67,0,0" Height="89" BorderBrush="#FFF0EEAF" Click="Start_Click">
             <Button.Content>
-                <Image Source="start.png"/>
+                <Image Source="start.png" OpacityMask="Black"/>
             </Button.Content>
         </Button>
 
@@ -33,7 +33,7 @@
             </Button.Content>
 
         </Button>
-        
+
         <Image Margin="0,77.758,588.333,8.667" Source="g-sleutel.png" Stretch="Fill" Grid.Row="1"/>
         <Image Margin="588,76.758,0.333,9.667" Source="g-sleutel.png" Stretch="Fill" Grid.Row="1"/>
         <Image Margin="588,10,0.333,236.667" Source="g-sleutel.png" Stretch="Fill" Grid.RowSpan="2"/>

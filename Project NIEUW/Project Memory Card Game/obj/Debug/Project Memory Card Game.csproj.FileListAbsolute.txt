@@ -150,3 +150,5 @@ C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debu
 C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.csproj.CoreCompileInputs.cache
 C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.exe
 C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.pdb
+C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.g.cs
+C:\Users\jornb\Source\Repos\P1v2\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.baml

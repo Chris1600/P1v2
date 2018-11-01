@@ -153,6 +153,7 @@ namespace Project_Memory_Card_Game
                 
                 if (match == false)
                 {
+                    
                     MessageBox.Show("Helaas, je hebt geen pair!");
                     //lastClicked2 = front.GetNumber();
                     lastClickedImage.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));

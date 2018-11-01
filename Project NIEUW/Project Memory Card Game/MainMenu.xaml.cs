@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Project_Memory_Card_Game
 {
-    /// <summary>
-    /// Interaction logic for MainMenu.xaml
-    /// </summary>
     public partial class MainMenu : Window
     {
         public MainMenu()
@@ -34,8 +31,8 @@ namespace Project_Memory_Card_Game
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MainWindow start = new MainWindow();
-            start.Show();
+            EnterName name = new EnterName();
+            name.Show();
         }
 
         //Settings

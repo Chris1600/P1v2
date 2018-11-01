@@ -56,10 +56,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CardFront.cs" />
+    <Compile Include="EnterName.xaml.cs">
+      <DependentUpon>EnterName.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Compile Include="SoundManager.cs" />
+    <Page Include="EnterName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -159,9 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\correct.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wrong.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
