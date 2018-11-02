@@ -26,6 +26,8 @@ namespace Project_Memory_Card_Game
         private Image card2;
         private int Score1, Score2, streak, StreakScore = 0;
         private int beurt = 1;
+        private Label label3;
+        private Label label4;
         public static bool sound = true;
 
         public int score1
@@ -40,12 +42,13 @@ namespace Project_Memory_Card_Game
             set { Score2 = value; }
         }
 
-        public MemoryGrid(Grid grid, int rows, int cols)
+        public MemoryGrid(Grid grid, int rows, int cols, Label label3, Label label4)
         {
             this.grid = grid;
             this.rows = rows;
             this.cols = cols;
-
+            this.label3 = label3;
+            this.label4 = label4;
             InitializeGrid();
             AddImage();
         }
@@ -66,7 +69,6 @@ namespace Project_Memory_Card_Game
         private void AddImage()
         {
             List<CardFront> images = GetImagesList();
-
             Random random = new Random();
 
             int positie1 = 0;
@@ -135,7 +137,7 @@ namespace Project_Memory_Card_Game
             Image card = (Image)sender;
             CardFront front = (CardFront)card.Tag;
             card.Source = front.GetImage();
-
+            
             if (lastClicked == -1)
             {
                 lastClicked = front.GetNumber();
@@ -152,6 +154,8 @@ namespace Project_Memory_Card_Game
                 {
                     match = true;
                     Score();
+                    label3.Content = Score1;
+                    label4.Content = Score2;
                     card.Opacity = 0;
                     card2.Opacity = 0;
                     card.IsEnabled = false;
@@ -281,6 +285,8 @@ namespace Project_Memory_Card_Game
             beurt = 1;
             lastClicked = -1;
             match = false;
+            label3 = null;
+            label4 = null;
         }
     }
 }

@@ -74,7 +74,7 @@
 
 
 
-        <Label x:Name="Label1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,384,0,0" Width="153" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"></Label>
+        <Label x:Name="Label1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,384,0,0" Width="60" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"></Label>
 
 
 
@@ -82,8 +82,10 @@
 
 
 
-        <Label x:Name="Label2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="249,383,0,0" Width="153" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"></Label>
+        <Label x:Name="Label2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="249,383,0,0" Width="60" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"></Label>
 
+        <Label x:Name="Label3" HorizontalAlignment="Left" Margin="70,383,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"/>
+        <Label x:Name="Label4" HorizontalAlignment="Left" Margin="309,382,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="White" FontSize="14" Height="25"/>
 
 
     </Grid>

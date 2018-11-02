@@ -27,11 +27,13 @@ namespace Project_Memory_Card_Game
         public MainWindow(string txtinput1, string txtinput2)
         {
             InitializeComponent();
-            grid = new MemoryGrid(GameGrid, NR_OF_ROWS, NR_OF_COLS);
+            grid = new MemoryGrid(GameGrid, NR_OF_ROWS, NR_OF_COLS, Label3, Label4);
             int playerscore1 = grid.score1;
             int playerscore2 = grid.score2;
-            Label1.Content = txtinput1 + ": " + playerscore1;
-            Label2.Content = txtinput2 + ": " + playerscore2;
+            Label1.Content = txtinput1 + ": ";
+            Label2.Content = txtinput2 + ": ";
+            Label3.Content = playerscore1;
+            Label4.Content = playerscore2;
         }
 
         //Reset on click
