@@ -150,3 +150,5 @@ D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Ga
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.csproj.CoreCompileInputs.cache
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.exe
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.pdb
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.baml

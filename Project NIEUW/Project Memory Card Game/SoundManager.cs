@@ -10,12 +10,21 @@ namespace Project_Memory_Card_Game
     public class SoundManager
     {
         public static void PlayCorrect()
+
         {
-            SoundPlayer audio = new SoundPlayer(Properties.Resources.correct);
-            audio.Play();
+
+            SoundPlayer audio = new SoundPlayer(Project_Memory_Card_Game.Properties.Resources.correct);
+
+            if (MemoryGrid.sound == true)
+
+            {
+
+                audio.Play();
+
+            }
+
         }
 
 
-   
     }
 }

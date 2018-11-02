@@ -17,7 +17,7 @@ namespace Project_Memory_Card_Game
     class MemoryGrid
     {
         private int lastClicked = -1;
-        private int lastClicked2 = -1;
+        //private int lastClicked2 = -1;
         private Image lastClickedImage;
         private Grid grid;
         private int rows, cols;
@@ -26,12 +26,18 @@ namespace Project_Memory_Card_Game
         private Image card2;
         private int Score1, Score2, streak, StreakScore = 0;
         private int beurt = 1;
+        public static bool sound = true;
 
-
-
-        private static void OnTimedEvent(object source, ElapsedEventArgs e)
+        public int score1
         {
-            Console.WriteLine("Hello World!");
+            get { return Score1; }
+            set { Score1 = value; }
+        }
+
+        public int score2
+        {
+            get { return Score2; }
+            set { Score2 = value; }
         }
 
         public MemoryGrid(Grid grid, int rows, int cols)
@@ -150,6 +156,7 @@ namespace Project_Memory_Card_Game
                     card2.Opacity = 0;
                     card.IsEnabled = false;
                     SoundManager.PlayCorrect();
+
                     MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
                 }
                 

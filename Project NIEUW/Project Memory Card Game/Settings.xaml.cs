@@ -19,6 +19,29 @@ namespace Project_Memory_Card_Game
     /// </summary>
     public partial class Settings : Window
     {
+
+
+        //Sound off
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+
+        {
+
+            MemoryGrid.sound = false;
+
+        }
+
+
+
+        //Sound on
+
+        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
+
+        {
+
+            MemoryGrid.sound = true;
+
+        }
         public Settings()
         {
             InitializeComponent();

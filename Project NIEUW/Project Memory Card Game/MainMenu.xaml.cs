@@ -34,7 +34,7 @@ namespace Project_Memory_Card_Game
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MainWindow start = new MainWindow();
+            EnterName start = new EnterName();
             start.Show();
         }
 

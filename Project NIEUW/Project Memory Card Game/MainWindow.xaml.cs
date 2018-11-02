@@ -23,13 +23,15 @@ namespace Project_Memory_Card_Game
         const int NR_OF_ROWS = 4;
         const int NR_OF_COLS = 4;
         MemoryGrid grid;
-       
-
-        public MainWindow()
+        
+        public MainWindow(string txtinput1, string txtinput2)
         {
             InitializeComponent();
             grid = new MemoryGrid(GameGrid, NR_OF_ROWS, NR_OF_COLS);
-
+            int playerscore1 = grid.score1;
+            int playerscore2 = grid.score2;
+            Label1.Content = txtinput1 + ": " + playerscore1;
+            Label2.Content = txtinput2 + ": " + playerscore2;
         }
 
         //Reset on click
@@ -44,13 +46,10 @@ namespace Project_Memory_Card_Game
             MainMenu menu = new MainMenu();
             this.Close();
             menu.Show();
-
         }
 
-        private void Score1(object sender, TextCompositionEventArgs e)
-        {
 
-        }
+        
     }
 
 
