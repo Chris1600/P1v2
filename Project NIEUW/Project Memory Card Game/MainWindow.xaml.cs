@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Project_Memory_Card_Game
 {
     /// <summary>
@@ -23,7 +24,7 @@ namespace Project_Memory_Card_Game
         const int NR_OF_ROWS = 4;
         const int NR_OF_COLS = 4;
         MemoryGrid grid;
-        
+
         public MainWindow(string txtinput1, string txtinput2)
         {
             InitializeComponent();
@@ -35,7 +36,6 @@ namespace Project_Memory_Card_Game
             Label3.Content = playerscore1;
             Label4.Content = playerscore2;
         }
-
         //Reset on click
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -49,10 +49,6 @@ namespace Project_Memory_Card_Game
             this.Close();
             menu.Show();
         }
-
-
-        
     }
-
-
 }
+    

@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CardFront.cs" />
+    <Compile Include="EndGame.xaml.cs">
+      <DependentUpon>EndGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EnterName.xaml.cs">
       <DependentUpon>EnterName.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,10 @@
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Compile Include="SoundManager.cs" />
+    <Page Include="EndGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EnterName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

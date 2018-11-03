@@ -152,3 +152,5 @@ D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Ga
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\Project Memory Card Game.pdb
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.g.cs
 D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EnterName.baml
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EndGame.g.cs
+D:\Memor\Project NIEUW\Project Memory Card Game\obj\Debug\EndGame.baml

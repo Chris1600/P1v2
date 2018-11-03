@@ -29,6 +29,7 @@ namespace Project_Memory_Card_Game
         private Label label3;
         private Label label4;
         public static bool sound = true;
+        private int kaartjesTeller = 0;
 
         public int score1
         {
@@ -156,17 +157,24 @@ namespace Project_Memory_Card_Game
                     Score();
                     label3.Content = Score1;
                     label4.Content = Score2;
+                    kaartjesTeller++;
                     card.Opacity = 0;
                     card2.Opacity = 0;
                     card.IsEnabled = false;
                     SoundManager.PlayCorrect();
 
-                    MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
+                    //MessageBox.Show("Gefeliciteerd, je hebt een pair!" + Score1 + " " + Score2);
                 }
-                
+
+                if (kaartjesTeller == 8)
+                {
+                    MessageBox.Show("Gefeliciteerd! Je hebt alle paren gevonden!");
+                    EndGame eindespel = new EndGame();
+                    eindespel.Show();
+                }
+
                 if (match == false)
                 {
-
                     MessageBox.Show("Helaas, je hebt geen pair!");
                     //lastClicked2 = front.GetNumber();
                     lastClickedImage.Source = new BitmapImage(new Uri("project/achterkant.png", UriKind.Relative));
@@ -272,6 +280,7 @@ namespace Project_Memory_Card_Game
             }
             return images;
         }
+        
 
         //Reset
         public void Reset()
@@ -285,8 +294,8 @@ namespace Project_Memory_Card_Game
             beurt = 1;
             lastClicked = -1;
             match = false;
-            label3 = null;
-            label4 = null;
+            label3.Content = 0;
+            label4.Content = 0;
         }
     }
 }

@@ -15,23 +15,28 @@ using System.Windows.Shapes;
 namespace Project_Memory_Card_Game
 {
     /// <summary>
-    /// Interaction logic for EnterName.xaml
+    /// Interaction logic for EndGame.xaml
     /// </summary>
-    public partial class EnterName : Window
+    public partial class EndGame : Window
     {
-        //public static bool geklikt;
-        public static MainWindow startgame;
-
-        public EnterName()
+        public EndGame()
         {
             InitializeComponent();
+            EnterName.startgame.Hide();
         }
 
-        public void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            startgame = new MainWindow(txtinput1.Text, txtinput2.Text);
             this.Hide();
-            startgame.Show();
+            MainMenu mainmenu = new MainMenu();
+            mainmenu.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow main = new MainWindow("","");
+            main.Show();
         }
     }
 }

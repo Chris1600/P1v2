@@ -1,0 +1,17 @@
+﻿<Window x:Class="Project_Memory_Card_Game.EndGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Memory_Card_Game"
+        mc:Ignorable="d"
+        Title="EndGame" Height="450" Width="800">
+    <Grid Background="#FFF0EEAF">
+
+        <Label FontFamily="Arial Bold" FontSize="20" Content="Highscores" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,34,0,0" Height="37" Width="130"/>
+
+        <Button Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="665,361,0,0" Height="50" Click="Button_Click"/>
+        <Button Content="New Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="10,361,0,0" Height="50" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
